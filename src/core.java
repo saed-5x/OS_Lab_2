@@ -33,7 +33,7 @@ public class core {
                 for (int j = 0; j<process.getProcess().size(); j++){
                     stream stream = streams.remove(0);
                     if (stream.needTime()){
-                        stream.implementStream();
+                        process.implementStream();
                         System.out.println();
                     }
                     else if (!stream.needTime()) {
